@@ -1,6 +1,8 @@
 import React from "react";
 
 export default function Todo(props) {
+  const [modalIsOpen, setfirst] = useState(false);
+
   function deleteHandler() {
     console.log("Clicked!");
   }
@@ -10,7 +12,7 @@ export default function Todo(props) {
       <h2>{props.text}</h2>
       <div className="actions">
         <button onClick={deleteHandler} className="btn">
-          Delete
+          Delete t
         </button>
       </div>
     </div>
